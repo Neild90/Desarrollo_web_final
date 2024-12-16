@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inmobiliaria Vice City</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style/estilos.css">
+</head>
+<body>
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="customNavbar">
+    <div class="container">
+        <a class="navbar-brand nav-link" href="#">Inmobiliaria Vice City</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacto">Contáctanos</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <!-- Hero Section -->
+<!-- Hero Section con Carrusel -->
+<section id="inicio" class="hero-section d-flex align-items-center">
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="image/carrusel1-1200x800.jpeg" class="d-block w-100" alt="Casa 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="display-4">Encuentra la casa de tus sueños</h1>
+                    <p class="lead">Con las mejores opciones para ti y tu familia</p>
+                    <a href="#servicios" class="btn btn-primary btn-lg">Nuestros Servicios</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="image/carrusel2-1000x653.jpg" class="d-block w-100" alt="Casa 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="display-4">Propiedades exclusivas</h1>
+                    <p class="lead">Descubre propiedades en las mejores zonas de la ciudad</p>
+                    <a href="#servicios" class="btn btn-primary btn-lg">Conócelas</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="image/carrusel3-1000x472.jpg" class="d-block w-100" alt="Casa 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="display-4">Asesoría profesional</h1>
+                    <p class="lead">Obtén el mejor asesoramiento para comprar o vender propiedades</p>
+                    <a href="#contacto" class="btn btn-primary btn-lg">Contáctanos</a>
+                </div>
+            </div>
+        </div>
+        <!-- Controles del Carrusel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+</section>
+
+    <section id="servicios" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Servicios</h2>
+            <div class="row">
+                <!-- Card 1: Venta de Casas -->
+                <div class="col-md-4">
+                    <div class="card shadow-lg clickable-card" data-bs-toggle="modal" data-bs-target="#galeriaVentaCasas">
+                        <img src="image/Fachada_casa.png" class="card-img-top" alt="Venta de Casas">
+                        <div class="card-body">
+                            <h5 class="card-title">Venta de Casas</h5>
+                            <p class="card-text">Encuentra la casa perfecta para ti en las mejores ubicaciones.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 2: Renta de Departamentos -->
+                <div class="col-md-4">
+                    <div class="card shadow-lg clickable-card" data-bs-toggle="modal" data-bs-target="#galeriaRentaDepartamentos">
+                        <img src="image/fachada_depar.jpg" class="card-img-top" alt="Renta de Departamentos">
+                        <div class="card-body">
+                            <h5 class="card-title">Renta de Departamentos</h5>
+                            <p class="card-text">Renta los mejores departamentos en zonas exclusivas.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 3: Asesoría Inmobiliaria -->
+                <div class="col-md-4">
+                    <div class="card shadow-lg clickable-card" data-bs-toggle="modal" data-bs-target="#galeriaAsesoria">
+                        <img src="image/interior.jpg" class="card-img-top" alt="Asesoría Inmobiliaria">
+                        <div class="card-body">
+                            <h5 class="card-title">Interiores</h5>
+                            <p class="card-text">La mejor experiencia en el interoir desu casa.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Galería Modal para Venta de Casas -->
+    <div class="modal fade" id="galeriaVentaCasas" tabindex="-1" aria-labelledby="galeriaVentaCasasLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="galeriaVentaCasasLabel">Galería de Casas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <img src="image/casa1.jpeg" class="card-img-top" alt="Casa en venta 1">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <img src="image/casa2.jpg" class="card-img-top" alt="Casa en venta 2">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <img src="image/casa3.webp" class="card-img-top" alt="Casa en venta 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="galeriaRentaDepartamentos" tabindex="-1" aria-labelledby="galeriaRentaDepartamentosLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="galeriaRentaDepartamentosLabel">Galería de Departamentos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <img src="image/depar1.jpg" class="card-img-top" alt="Casa en venta 1">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <img src="image/depar2.jpg" class="card-img-top" alt="Casa en venta 2">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <img src="image/depar3.jpg" class="card-img-top" alt="Casa en venta 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="galeriaAsesoria" tabindex="-1" aria-labelledby="galeriaAsesoriaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="galeriaAsesoriaLabel">Galería Interiores</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <img src="image/inven1.jpg" class="card-img-top" alt="Casa en venta 1">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <img src="image/inven2.jpg" class="card-img-top" alt="Casa en venta 2">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <img src="image/inven3.jpg" class="card-img-top" alt="Casa en venta 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seccion Contactos -->
+    <section id="contacto" class="custom-contact-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contáctanos</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="name" placeholder="Tu nombre">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="email" placeholder="Tu correo">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="message" rows="3" placeholder="Tu mensaje"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h5>Nuestra ubicación</h5>
+                    <p><i class="fa-solid fa-house"></i><strong>Calle:</strong> 123, Piura, Perú</p>
+                    <p><i class="fa-solid fa-phone-volume"></i> <strong>Teléfono:</strong> +123 456 789</p>
+                    <p><i class="fas fa-envelope"></i> <strong>Email:</strong> info@inmobiliariavicecity.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <a href="#inicio" id="backToTop" class="btn btn-primary">⬆</a>
+    
+    <!-- Footer -->
+    <footer class="colorfooter text-center">
+        <p>&copy; 2024 Inmobiliaria Vice City. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

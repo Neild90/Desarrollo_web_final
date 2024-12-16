@@ -1,0 +1,116 @@
+
+/* Navbar*/
+#customNavbar {
+    background-image: url('../image/banner1.jpg'); 
+    background-size: cover; /* La imagen cubre todo el contenedor */
+    background-repeat: no-repeat; /* No se repite la imagen */
+    background-position: center; /* Centra la imagen */
+    color: white; /* Cambia el color del texto */
+}
+#customNavbar .nav-link {
+    color: white;
+    transition: color 0.4s ease;
+}
+/* Color de las letras al pasar el cursor */
+#customNavbar .nav-link:hover {
+    color: #a400b3; /* Color al pasar el cursor */
+}
+/* Ajuste de opacidad  */
+#customNavbar {
+    opacity: 0.9; /*ajuste de transparencia */
+}
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+/*----carrusel-----*/
+.carousel-caption h1 {
+    text-shadow: 3px 3px 4px rgb(0, 0, 0);
+}
+.carousel-caption p {
+    color: white;
+    text-shadow: 2px 2px 3px rgb(0, 0, 0);
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #a400b3; /* Fondo de flechas */
+    border-radius: 50%;
+}
+
+
+/* Cambiar color de los botones */
+.btn {
+    background-color: #cb60f5; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; 
+}
+.btn:hover {
+    background-color: #a400b3; /* Color de fondo al pasar el cursor */
+    color: white; /* Color del texto al pasar el cursor */
+}
+
+
+/* Cambiar color del texto en todo el cuerpo de la página */
+body {
+    color: #333; /* Color de las letras */
+    padding-top: 56px; /* Ajusta según la altura de tu navbar */
+}
+
+.hero-section {
+    height: 100vh; /* Asegura que el carrusel ocupe toda la altura de la ventana */
+}
+
+.carousel-inner, .carousel-item, .carousel img {
+    height: 100vh; /* Hace que las imágenes ocupen toda la pantalla */
+}
+
+/* Tarjetas con mismo tamaño de imagen */
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s;/*crea un efecto suave al cambiar de tamaño*/
+}
+.card-title {
+    color: #a400b3; /* titulo del card */
+}
+.card:hover {
+    transform: scale(1.05);/*animacion 1: Escala 105% de su tamaño original*/
+    transform: translateY(-10px);/*animacion 2: levanta*/
+    transition: transform 0.3s ease;
+}
+.card-img-top {
+    width: 100%;
+    height: 200px; /* Ajusta la altura */
+    object-fit: cover; /* Recorta la imagen sin deformarla */
+}
+
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.custom-contact-section {
+    background-color: #f0f0f0; /* Cambia el color de fondo */
+}
+
+#contacto form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#contacto .form-label {
+    font-weight: bold;
+}
+.colorfooter{/*color del footer*/
+    color: white;
+    background-color: #cb60f5;
+    padding: 20px;
+}
